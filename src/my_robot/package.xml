@@ -50,10 +50,18 @@
   <!--   <doc_depend>doxygen</doc_depend> -->
   <buildtool_depend>catkin</buildtool_depend>
 
+  <exec_depend>gazebo_ros</exec_depend>
 
   <!-- The export tag contains other, unspecified, tags -->
-  <export>
-    <!-- Other tools can request additional information be placed here -->
+  <export> 
 
+    <!--<gazebo_ros gazebo_model_path="${prefix}/models"/>-->
+
+    <!-- This is required for Gazebo to find package materials.  -->
+    <!-- Use this instruction to show where Gazebo will look for -->
+    <!-- materials when executed as a ROS plugin.                -->
+    <!-- rospack plugins -attrib="gazebo_media_path" gazebo_ros  -->
+    <gazebo_ros gazebo_media_path="${prefix}"/>
   </export>
+
 </package>
