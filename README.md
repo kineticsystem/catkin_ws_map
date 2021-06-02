@@ -1,4 +1,11 @@
-﻿STARTUP COMMANDS
+﻿INTRODUCTION
+
+SLAM Udacity exercise.
+
+!Screenshot](screenshot.png)
+
+
+STARTUP COMMANDS
 
 To startup the Gazebo world and the RVIS tool, run the following:
 roslaunch my_robot world.launch
@@ -19,3 +26,6 @@ rostopic hz /camera/rgb/image_raw /camera/depth/image_raw /camera/rgb/camera_inf
 
 Check where Gazebo will load materials when launched as a ROS node
 rospack plugins --attrib="gazebo_media_path" gazebo_ros
+
+View database map creaded in .ros/rtabmap.db
+rtabmap-databaseViewer ~/.ros/rtabmap.db
