@@ -17,3 +17,5 @@ DEBUGGING
 Display the publishing rate of a topic.
 rostopic hz /camera/rgb/image_raw /camera/depth/image_raw /camera/rgb/camera_info /scan
 
+Check where Gazebo will load materials when launched as a ROS node
+rospack plugins --attrib="gazebo_media_path" gazebo_ros
